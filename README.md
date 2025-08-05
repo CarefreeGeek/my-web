@@ -29,14 +29,7 @@ This website showcases my skills, projects, and a little bit about me!
 - Projects filtering by category
 - Glassmorphism design effects
 
-Clone the project:
 
-git clone https://github.com/CarefreeGeek/your-project.git
-cd your-project
-
-npm install
-
-npm start
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
