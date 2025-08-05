@@ -1,12 +1,45 @@
-# React + Vite
+# 🌐 CarefreeGeek's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website built with **React**, **TailwindCSS**, and some cool animations powered by **Framer Motion**.  
+This website showcases my skills, projects, and a little bit about me!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- ⚛️ **React.js**
+- 🎨 **TailwindCSS**
+- 🎞️ **Framer Motion**
+- 🌙 Dark Mode Enabled
+- 📦 Deployed on **Vercel**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Preview
+
+![Preview](https://your-screenshot-link.com) <!-- replace with your deployed site screenshot -->
+
+---
+
+**Features**
+- Responsive and mobile-friendly layout
+- Dark/light theme toggle
+- Animated sections using Framer Motion
+- Contact form with validation
+- Projects filtering by category
+- Glassmorphism design effects
+
+Clone the project:
+
+git clone https://github.com/CarefreeGeek/your-project.git
+cd your-project
+
+npm install
+
+npm start
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+This project is licensed under the [MIT License](LICENSE).
+
+Made with ❤️ by **CarefreeGeek** from Banaras 🚩
