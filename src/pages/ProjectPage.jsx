@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import projectsData from "./projects.json";
+import projectsData from "./Projects.json";
 import ProjectCard from "../Components/ProjectCard.jsx";
 import ProjectDetail from "../Components/ProjectDetail.jsx";
 import ProjectFilters from "../Components/ProjectFilters.jsx";
@@ -50,5 +50,6 @@ const ProjectPage = () => {
     </div>
   );
 };
+
 
 export default ProjectPage;
