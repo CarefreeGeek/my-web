@@ -6,9 +6,9 @@ import ProjectFilters from "../Components/ProjectFilters.jsx";
 
 const ProjectPage = () => {
   const [filters, setFilters] = useState({
-    category: "All",
-    language: "All",
-    level: "All",
+    category: "all",
+    language: "all",
+    level: "all",
   });
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -18,9 +18,9 @@ const ProjectPage = () => {
     const level = proj.level || "";
 
     return (
-      (filters.category === "All" || filters.category === category) &&
-      (filters.language === "All" || language.includes(filters.language)) &&
-      (filters.level === "All" || filters.level === level)
+      (filters.category === "all" || filters.category === category) &&
+      (filters.language === "all" || language.includes(filters.language)) &&
+      (filters.level === "all" || filters.level === level)
     );
   });
 

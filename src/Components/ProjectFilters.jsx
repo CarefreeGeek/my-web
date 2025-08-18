@@ -1,12 +1,12 @@
 import React from "react";
 
 const ProjectFilters = ({ filters, setFilters }) => {
-  const categories = ["All", "Web", "App", "AI", "ML"];
-  const languages = ["All", "JavaScript", "Python", "C++"];
-  const levels = ["All", "Beginner", "Intermediate", "Advanced"];
+  const categories = ["all", "web", "app", "ai", "ml"];
+  const languages = ["all", "javaScript", "python", "c++"];
+  const levels = ["all", "beginner", "intermediate", "advanced"];
 
   return (
-    <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow">
+    <div className="bg-white fixed dark:bg-gray-800 p-4 rounded-xl shadow">
       <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">Filter Projects</h3>
       <div className="space-y-3">
         <div>

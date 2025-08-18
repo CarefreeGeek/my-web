@@ -6,7 +6,7 @@ import Projects from '../Components/Projects';
 
 const Home = () => {
     return (
-        <div>
+        <div className='relative bg-transparent'>
             <HeroSection />
             <AfterHeroSection />
             <Courses />

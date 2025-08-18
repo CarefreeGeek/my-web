@@ -24,7 +24,7 @@
   {
     "name": "EcoFlow Smart Garden",
     "about": "An automated hydroponic system for sustainable urban farming.",
-    "languages": "Python",
+    "languages": "python",
     "category": "Internet of Things",
     "level": "Advanced",
     "link": "https://ecoflow.com/garden-project",
@@ -35,7 +35,7 @@
   {
     "name": "MediConnect Telehealth Platform",
     "about": "A secure and intuitive platform for virtual doctor consultations.",
-    "languages": "React, Node.js",
+    "languages": "react, Node.js",
     "category": "Healthcare IT",
     "level": "Intermediate",
     "link": "https://mediconnect.org/platform",
@@ -57,7 +57,7 @@
   {
     "name": "AquaSentinel Water Quality Monitor",
     "about": "A real-time sensor network for monitoring water quality in urban rivers.",
-    "languages": "Arduino C++, Python",
+    "languages": "Arduino c++, Python",
     "category": "Environmental Tech",
     "level": "Intermediate",
     "link": "https://aquasentinel.org/monitor",
@@ -123,7 +123,7 @@
   {
     "name": "EduQuest Interactive Learning",
     "about": "A gamified educational platform for K-12 students.",
-    "languages": "HTML, CSS, JavaScript",
+    "languages": "HTML, CSS, javascript",
     "category": "EdTech",
     "level": "Beginner",
     "link": "https://eduquest.org/learning",
@@ -156,7 +156,7 @@
   {
     "name": "SafeGuard Home Security",
     "about": "A smart home security system with AI-powered anomaly detection.",
-    "languages": "C++, TensorFlow Lite",
+    "languages": "c++, TensorFlow Lite",
     "category": "Smart Home",
     "level": "Advanced",
     "link": "https://safeguard.io/security",
@@ -200,7 +200,7 @@
   {
     "name": "TerraForm 3D City Builder",
     "about": "A web-based tool for creating and visualizing 3D urban models.",
-    "languages": "JavaScript, Three.js",
+    "languages": "javascript, Three.js",
     "category": "3D Graphics",
     "level": "Intermediate",
     "link": "https://terraform.io/city-builder",
@@ -255,7 +255,7 @@
   {
     "name": "PixelForge Image Editor",
     "about": "A web-based image editing application with a range of filters and manipulation tools.",
-    "languages": "JavaScript, HTML5 Canvas",
+    "languages": "javascript, HTML5 Canvas",
     "category": "Web Development",
     "level": "Beginner",
     "link": "https://pixelforge.io/editor",

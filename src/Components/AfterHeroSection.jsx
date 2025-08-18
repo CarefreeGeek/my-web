@@ -3,7 +3,7 @@ import { Code, Users, Rocket } from "lucide-react";
 
 const AfterHeroSection = () => {
   return (
-    <section className="bg-gray-100 dark:bg-gray-900 py-16 px-6 sm:px-10 lg:px-20">
+    <section className="bg-transparent dark:bg-gray-900 py-16 px-6 sm:px-10 lg:px-20">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl sm:text-5xl font-bold text-gray-800 dark:text-white mb-6">
           Kya Seekhoge Yahaan?

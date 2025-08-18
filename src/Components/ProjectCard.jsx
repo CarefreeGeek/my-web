@@ -1,4 +1,5 @@
 import React from "react";
+import * as motion from "motion/react-client"
 
 const ProjectCard = ({ project, onClick }) => {
   const levelColors = {
@@ -8,7 +9,9 @@ const ProjectCard = ({ project, onClick }) => {
   };
 
   return (
-    <div
+    <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 1.15 }}
       className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow cursor-pointer hover:shadow-lg transition"
       onClick={onClick}
     >
@@ -33,7 +36,7 @@ const ProjectCard = ({ project, onClick }) => {
       >
         View Project
       </a>
-    </div>
+    </motion.div>
   );
 };
 
