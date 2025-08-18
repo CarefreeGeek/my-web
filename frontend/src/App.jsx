@@ -1,20 +1,21 @@
-import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './style.css'
 import Home from './pages/Home'
 import About from './pages/About'
 import Navbar from './Components/Navbar'
 import Join from './pages/Join'
-import Footer from './Components/Footer'
-import ProjectPage from './pages/ProjectPage'
-import Contact from './pages/Contact'
-import BubblesBackground from './Components/BubblesBackground'
+import Footer from './Components/Footer.jsx'
+import ProjectPage from './pages/ProjectPage.jsx'
+import Contact from './pages/Contact.jsx'
+import CommunityPage from './pages/Community.jsx'
+import Login from './/Components/auth/Login.jsx'
+import Signup from './Components/auth/Signup.jsx'
+import Dashboard from './Components/auth/Dashboard.jsx'
 
 
 function App() {
   return (
     < >
-    <BubblesBackground />
     <BrowserRouter>
       <Navbar />
       <Routes>
@@ -23,7 +24,10 @@ function App() {
         <Route path="/join" element={<Join />} />
         <Route path="/projectpage" element={<ProjectPage />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/bg" element={<BubblesBackground />} />
+        <Route path="/community" element={<CommunityPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="*" element={<h1 className='flex justify-center mt-48 font-extrabold text-7xl'>404 Not Found</h1>} />
       </Routes>
       <Footer />
