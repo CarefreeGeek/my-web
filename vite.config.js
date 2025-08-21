@@ -10,7 +10,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/auth': {
-        target: 'http://localhost:8000',
+        target: 'https://carefree-geek.vercel.app',
         changeOrigin: false,
         secure: false,
         credentials: 'include'
