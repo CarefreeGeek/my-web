@@ -1,37 +1,11 @@
 import React, { useState } from "react";
 import { Search } from "lucide-react";
 import PostList from "../Components/community/PostList.jsx";
-import CommHero from "../Components/community/CommHero.jsx";
+import posts from "../assets/postList.js"
 
 const CommunityPage = () => {
   const [search, setSearch] = useState("");
 
-  const posts = [
-    {
-      id: 1,
-      title: "How to optimize React performance?",
-      author: "Rohit Sharma",
-      time: "2 hours ago",
-      likes: 23,
-      comments: 12,
-    },
-    {
-      id: 2,
-      title: "Best resources to learn Data Structures",
-      author: "Neha Verma",
-      time: "5 hours ago",
-      likes: 41,
-      comments: 20,
-    },
-    {
-      id: 3,
-      title: "How to deploy Django with PostgreSQL on VPS?",
-      author: "Amit Patel",
-      time: "1 day ago",
-      likes: 15,
-      comments: 9,
-    },
-  ];
 
   return (
     <div className="min-h-screen bg-black p-6">
@@ -62,8 +36,6 @@ const CommunityPage = () => {
 
       {/* Posts List */}
       <PostList posts={posts} search={search} />
-
-      {/* <CommHero /> */}
     </div>
   );
 };

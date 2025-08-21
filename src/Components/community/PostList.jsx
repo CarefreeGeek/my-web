@@ -13,7 +13,13 @@ const PostList = ({ posts, search }) => {
             key={post.id}
             className="rounded-2xl bg-gray-400 shadow-md hover:shadow-lg transition p-4"
           >
-            <h2 className="text-lg font-semibold text-gray-800">{post.title}</h2>
+            <h2 className="text-lg font-semibold text-gray-800">
+              {post.title}
+            </h2>
+
+            {/* <p className="text-gray-700 mt-2">{post.body}</p> */}
+
+            {/* <hr className="m-5" /> */}
             <p className="text-sm text-gray-500 mt-1">
               {post.author} • {post.time}
             </p>

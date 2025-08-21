@@ -7,5 +7,15 @@ import "flowbite/plugin";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   darkMode: "class",
+  server: {
+    proxy: {
+      '/auth': {
+        target: 'http://localhost:8000',
+        changeOrigin: false,
+        secure: false,
+        credentials: 'include'
+      }
+    }
+  }
 })
 

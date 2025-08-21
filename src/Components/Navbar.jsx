@@ -1,56 +1,40 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useAuth } from "../Components/auth/useAuth.jsx";
 
 const Navbar = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Replace with your real authentication logic
-  const isLoggedIn = false; // <- update this with actual auth check
+  const { isLoggedIn } = useAuth();
+
 
   const isActive = (path) => location.pathname === path;
 
   return (
     <nav className="bg-transparent sticky top-0 z-10 border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        {/* Logo */}
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             CarefreeGeek
           </span>
         </Link>
-
-        {/* Right Side (Profile / Hamburger) */}
         <div className="flex items-center md:order-2">
-          {isLoggedIn ? (
-            <button
-              type="button"
-              className="flex mx-3 text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
-              id="user-menu-button"
-            >
-              <img
-                className="w-8 h-8 rounded-full"
-                src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-                alt="user"
-              />
-            </button>
-          ) : (
-            <div className="hidden md:flex space-x-3">
-              {/* Only show on desktop */}
-              <Link
-                to="/login"
-                className="text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg text-sm px-4 py-2"
-              >
-                Login
-              </Link>
-              <Link
-                to="/signup"
-                className="text-gray-900 bg-white border border-gray-300 hover:bg-gray-100 font-medium rounded-lg text-sm px-4 py-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700"
-              >
-                Sign Up
-              </Link>
-            </div>
-          )}
+        {isLoggedIn ? (
+        <Link
+          to="/dashboard"  id="user-menu-button" className="flex mx-3 text-sm bg-gray-800 rounded-full md:me-0 px-3 py-2 text-white font-medium hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600">
+          Dashboard
+        </Link>
+      ) : (
+        <div className="hidden md:flex space-x-3">
+          <Link to="/login" className="text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg text-sm px-4 py-2">
+            Login
+          </Link>
+          <Link to="/signup" className="text-gray-900 bg-white border border-gray-300 hover:bg-gray-100 font-medium rounded-lg text-sm px-4 py-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700">
+              Sign Up
+          </Link>
+        </div>
+      )}
 
           {/* Hamburger button */}
           <button
@@ -99,8 +83,8 @@ const Navbar = () => {
                   to={link.path}
                   onClick={() => setIsMenuOpen(false)}
                   className={`block py-2 px-3 rounded-sm md:p-0 ${isActive(link.path)
-                      ? "text-white md:text-blue-700 dark:text-blue-500"
-                      : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500  dark:hover:text-white md:dark:hover:bg-transparent"
+                    ? "text-white md:text-blue-700 dark:text-blue-500"
+                    : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500  dark:hover:text-white md:dark:hover:bg-transparent"
                     }`}
                 >
                   {link.name}
